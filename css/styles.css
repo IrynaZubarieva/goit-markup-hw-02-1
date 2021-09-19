@@ -169,6 +169,7 @@ body {
   font-size: 14px;
   line-height: 1.7;
   background-color: #2f303a;
+  text-decoration: none;
 }
 
 .address .list .contact:hover {
