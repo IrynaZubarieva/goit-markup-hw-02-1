@@ -24,6 +24,11 @@ body {
   line-height: 1.2;
 }
 
+.logo .studio:hover,
+.logo .studio:focus {
+  color: #2196f3;
+}
+
 .studio {
   color: #000000;
   font-family: raleway, cursive;
@@ -125,25 +130,40 @@ body {
 }
 
 .button {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  font-family: Roboto inherit;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.8;
-  text-align: center;
+  line-height: 1.87;
+  display: flex;
   align-items: center;
-}
-
-.button .primary {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
   text-align: center;
-  align-items: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
+.button.primary {
+  background-color: var(--accent-text-color);
+  color: var(--text-color-white);
+}
+.button.primary:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
 
-.address .contact {
+.footer {
+  background-color: #2f303a;
+}
+
+.footer .studio {
+  color: #ffffff;
+  font-family: raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.address .list .contact {
   color: #ffffff;
   font-weight: 400;
   font-size: 14px;
@@ -151,8 +171,8 @@ body {
   background-color: #2f303a;
 }
 
-.address .contact:hover {
-  color: #ffffff;
+.address .list .contact:hover {
+  color: #2196f3;
 }
 
 /* css для портфолио */
