@@ -3,21 +3,19 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-bg-color: #ffffff;
-  --primary-white-color: #ffffff;
+  --background-accent-color: #f5f4fa;
 }
 
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
-  color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 16px;
 }
 
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -50,6 +48,7 @@ body {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav .link.current {
@@ -59,6 +58,7 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196f3;
+  text-decoration: none;
 }
 
 .auth-nav .link {
@@ -67,16 +67,22 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
+  text-decoration: none;
 }
 .site-nav .link1 {
   color: #2196f3;
+  text-decoration: none;
 }
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: #2196f3;
 }
-
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .hero-title {
   color: #ffffff;
   font-family: Roboto;
@@ -101,7 +107,7 @@ body {
 
 .section-title {
   color: #212121;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
@@ -126,7 +132,7 @@ body {
 .section .text {
   color: #757575;
   font-family: Roboto;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   text-align: left;
@@ -134,7 +140,14 @@ body {
 }
 
 .button {
-  font-family: Roboto inherit;
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: 10px 32px;
+  min-width: 200px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -142,14 +155,15 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
+
 .button.primary {
-  background-color: var(--accent-text-color);
-  color: var(--text-color-white);
+  background-color: var(--accent-color);
+  color: var(--text-color-white--);
 }
-.button.primary:hover {
+.button .primary:hover,
+.button .primary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -168,6 +182,7 @@ body {
 
 .address .list .contact {
   color: #ffffff;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -176,7 +191,11 @@ body {
 }
 .address .list .contact1 {
   color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
   text-decoration: none;
+  font-style: normal;
 }
 
 .address .list .contact1:hover,
@@ -193,6 +212,7 @@ body {
 
 .site-nav .link2 {
   color: #2196f3;
+  text-decoration: none;
 }
 
 .hero-portfolio-list {
@@ -211,15 +231,25 @@ body {
 
 .list .button-primary:hover,
 .list .button-primary:focus {
-  color: var(--primary-white-color);
+  color: var(--primary-bg-color);
   background-color: var(--accent-color);
-  font-family: Roboto inherit;
+  border-color: var(--accent-color);
+}
+
+.list .button-primary {
+  font-family: inherit;
+  background-color: #f5f4fa;
   color: #212121;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.list .button-primary1 .link.current {
+  color: #2196f3;
 }
 
 .list-portfolio {
