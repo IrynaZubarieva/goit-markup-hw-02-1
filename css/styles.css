@@ -104,7 +104,9 @@ body {
 .advantage .title {
   color: #212121;
 }
-
+.section1 {
+  background-color: var(--background-accent-color);
+}
 .section-title {
   color: #212121;
   font-weight: 700;
@@ -119,6 +121,7 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  background-color: var(--background-accent-color);
 }
 
 .section .career {
@@ -127,6 +130,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  background-color: var(--background-accent-color);
 }
 
 .section .text {
@@ -156,6 +160,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: none;
 }
 
 .button.primary {
