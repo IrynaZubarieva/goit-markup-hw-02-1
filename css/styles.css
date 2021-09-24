@@ -68,7 +68,6 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
-  display: flex;
 }
 
 .site-nav .link.current {
@@ -88,13 +87,11 @@ body {
   font-size: 14px;
   line-height: 1.1;
   text-decoration: none;
-  display: flex;
 }
 
 .site-nav .link1 {
   color: #2196f3;
   text-decoration: none;
-  display: flex;
 }
 
 .auth-nav .link:hover,
@@ -108,15 +105,31 @@ body {
 
 .page-header-navigation {
   display: flex;
+  align-items: center;
 }
 
-.site-nav .list {
+.site-nav {
   display: flex;
+  margin-left: 93px;
 }
 
-.auth-nav .list {
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.auth-nav {
   display: flex;
-  margin-left: 0;
+  margin-left: auto;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
 }
 
 .container {
