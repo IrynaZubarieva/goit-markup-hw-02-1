@@ -147,8 +147,6 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 280px;
 }
 .hero {
   background-color: #2f303a;
@@ -158,6 +156,7 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  padding: 200px 0;
 }
 
 .advantage .title {
@@ -249,9 +248,9 @@ body {
 
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px;
 }
+
 .address {
   margin-top: 20px;
 }
@@ -263,8 +262,11 @@ body {
   font-size: 26px;
   line-height: 1.2;
 }
+.list1 {
+  list-style: none;
+}
 
-.address .list .contact {
+.address .list1 .contact {
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
@@ -275,7 +277,7 @@ body {
   margin-top: 20px;
 }
 
-.address .list .contact1 {
+.address .list1 .contact1 {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
@@ -283,16 +285,15 @@ body {
   text-decoration: none;
   font-style: normal;
   margin-top: 20px;
-  display: block;
 }
 
-.address .list .contact1:hover,
-.address .list .contact1:focus {
+.address .list1 .contact1:hover,
+.address .list1 .contact1:focus {
   color: #2196f3;
 }
 
-.address .list .contact:hover,
-.address .list .contact:focus {
+.address .list1 .contact:hover,
+.address .list1 .contact:focus {
   color: #2196f3;
 }
 
